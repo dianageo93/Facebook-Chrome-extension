@@ -4,65 +4,48 @@
     <title>Getting Started Extension's Popup</title>
     <style>
       body {
-        min-width: 375px;
-        <!--min-height: 375px;-->
-        height: auto;
+        min-width: 300px;
         overflow-x: hidden;
+		<!--background-color: #3B5998;-->
+        height: auto;
         font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
 		font-size: 13px;
       }
       
       div {
-		background-repeat: repeat-x;
-		background-color: #3B5998;
-		background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAqCAMAAABFoMFOAAAAWlBMVEVOaaJDYJxCX5xBXptIZJ9MZ6E/XJpFYZ1KZqA9W5lGYp5HY55MaKFJZZ9LZqBEYZ1NaaJNaKJNaKFAXZtAXZpLZ6E+XJo+W5lJZaA9Wpk8Wpk8Wpg8WZg7WZj2xcGWAAAANElEQVR42lWGSQoAIBDDHCjo0f8/UxBxQDQuFwlpqgBZBq6+P+unVY1GnDgwqbD2zGz5e1lBdwvGGPE6OgAAAABJRU5ErkJggg==");
 		min-height: 42px;
-		min-width: 375px;
+		min-width: 300px;
 		display: block;
-		font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
-		font-size: 11px;
 		text-align: left;
+		border:2px solid;
+		border-radius:15px;
+		padding-left: 2px;
 	  }
 	  
-	 #box {
+	 #text {
     	height: auto;
     	width: auto;
-    	text-align: center;
-    	vertical-align: middle;
+    	text-align: left;
     	display: table-cell;
-    	padding-bottom: 5px;
-    	padding-top: 5px;
+    	padding-left: 10px;
+    	font-size: 13px;
 	}
 	
-	#table_id {
-		border-collapse: collapse;
-		width: 100%;
-		height: 100%;
-		border:1px solid #3B5998;
-		padding: 3px 7px 2px 7px;
-	}
-	#table_id td {
-		text-align: center;
-		border:1px solid #3B5998;
-		height: 50%;
-	}
-	  
     </style>
-
-    <!--
-      - JavaScript and HTML must be in separate files: see our Content Security
-      - Policy documentation[1] for details and explanation.
-      -
-      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
-     -->
     <script src="popup.js"></script>
   </head>
   <body>
   	<div>
-  		<img src="http://i717.photobucket.com/albums/ww175/comeoutfiring/myspace%20bits/facebook-logo.png" width="100px" height="38px">
-  		<div id="box">
-   		 	You voice your wish, I make it happen !
-		</div>
+  		<table>
+  			<tr>
+  				<td>
+  					<img src="facebook_logo.jpg">
+  				</td>
+  				<td id="text">
+  					Lorem ipsum
+  				</td>
+  			</tr>
+  		</table>
   	</div>
   	<table id="table_id">
   		<tr><td>Lorem ipsum</td></tr>
